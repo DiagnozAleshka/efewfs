@@ -10,10 +10,10 @@ public class MainTest {
 @Test
 
     public void test () {
-    amountMonthsUnderAverange service = new amountMonthsUnderAverange();
-        int expected = 5;
+    BottomSales service = new BottomSales();
+        int expected = 9;
         int[] amountSale = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actuall = service.amountMonths(amountSale);
+        int actuall = service.minSales(amountSale);
     Assertions.assertEquals(expected,actuall);
 
     }
